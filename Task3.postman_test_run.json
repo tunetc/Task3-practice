@@ -1,0 +1,186 @@
+{
+	"id": "abff22a9-ae4d-457a-8d08-b2bb7ab87f9a",
+	"name": "Task3",
+	"timestamp": "2024-06-02T17:50:38.519Z",
+	"collection_id": "24401321-74eaac20-f693-489c-9b9f-e68703579685",
+	"folder_id": 0,
+	"environment_id": "24401321-0e5adaa7-94ff-4554-9a5b-3a7e88b05e7d",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-06-02T17:50:37.332Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3a5d9dd2-92ce-4947-aa36-7e027924373e",
+			"name": "POST books",
+			"url": "http://localhost/api/books",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код200": true,
+				"Відповідь має обов’язкові поля": true,
+				"Назва та автор є непорожніми рядками": true,
+				"Id не від'ємне ціле число": true
+			},
+			"testPassFailCounts": {
+				"Статус код200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Відповідь має обов’язкові поля": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Назва та автор є непорожніми рядками": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id не від'ємне ціле число": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Статус код200": true,
+					"Відповідь має обов’язкові поля": true,
+					"Назва та автор є непорожніми рядками": true,
+					"Id не від'ємне ціле число": true
+				}
+			]
+		},
+		{
+			"id": "e3ecd125-7a8f-4284-9824-326dc3c27685",
+			"name": "GET books",
+			"url": "http://localhost/api/books",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код 200": true,
+				"Відповідь має обов'язкові поля - id, title та автор": true,
+				"Назва та автор не порожні рядки": true,
+				"Id не від'ємне ціле число": true
+			},
+			"testPassFailCounts": {
+				"Статус код 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Відповідь має обов'язкові поля - id, title та автор": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Назва та автор не порожні рядки": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id не від'ємне ціле число": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				138
+			],
+			"allTests": [
+				{
+					"Статус код 200": true,
+					"Відповідь має обов'язкові поля - id, title та автор": true,
+					"Назва та автор не порожні рядки": true,
+					"Id не від'ємне ціле число": true
+				}
+			]
+		},
+		{
+			"id": "03fb9e4a-a4c6-4c9f-b56d-026dc29a934d",
+			"name": "PUT books",
+			"url": "http://localhost/api/books/1",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				83
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "faed504d-d671-45d4-95dd-b5937b8af1e1",
+			"name": "GET books by ID",
+			"url": "http://localhost/api/books/1",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				65
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9f8280be-c573-4c1c-9506-a55d70d5a856",
+			"name": "DELETE books",
+			"url": "http://localhost/api/books/1",
+			"time": 67,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				67
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 420,
+	"collection": {
+		"requests": [
+			{
+				"id": "3a5d9dd2-92ce-4947-aa36-7e027924373e",
+				"method": "POST"
+			},
+			{
+				"id": "e3ecd125-7a8f-4284-9824-326dc3c27685",
+				"method": "GET"
+			},
+			{
+				"id": "03fb9e4a-a4c6-4c9f-b56d-026dc29a934d",
+				"method": "PUT"
+			},
+			{
+				"id": "faed504d-d671-45d4-95dd-b5937b8af1e1",
+				"method": "GET"
+			},
+			{
+				"id": "9f8280be-c573-4c1c-9506-a55d70d5a856",
+				"method": "DELETE"
+			}
+		]
+	}
+}
